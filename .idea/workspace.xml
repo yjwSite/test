@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03fdc181-a6c4-4cf4-919b-81ca2a54fbdb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
-    </list>
+    <list default="true" id="03fdc181-a6c4-4cf4-919b-81ca2a54fbdb" name="Default" comment="" />
     <ignored path="test.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,7 +64,6 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="192" />
-    <option name="y" value="165" />
     <option name="width" value="1531" />
     <option name="height" value="1040" />
   </component>
@@ -118,7 +115,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/lianXiYuZongJie/图片处理" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
@@ -172,7 +169,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="192" y="165" width="1531" height="1040" extended-state="0" />
+    <frame x="192" y="0" width="1531" height="1040" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24983256" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
