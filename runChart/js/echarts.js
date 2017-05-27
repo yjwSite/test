@@ -9220,7 +9220,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports) {
 
 	/**
-	 * 缓动代码来自 https://github.com/sole/tween.js/blob/master/src/Tween.js
+	 * 缓动代码来自 https://github.com/sole/tween.js/blob/master/static/Tween.js
 	 * @see http://sole.github.io/tween.js/examples/03_graphs.html
 	 * @exports zrender/animation/easing
 	 */
@@ -14721,7 +14721,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            else {
 	                image = src;
 	            }
-	            // FIXME Case create many images with src
+	            // FIXME Case create many images with static
 	            if (!image && src) {
 	                // Try get from global image cache
 	                var cachedImgObj = globalImageCache.get(src);
@@ -17032,7 +17032,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	    /**
 	     * Prevent mouse event from being dispatched after Touch Events action
-	     * @see <https://github.com/deltakosh/handjs/blob/master/src/hand.base.js>
+	     * @see <https://github.com/deltakosh/handjs/blob/master/static/hand.base.js>
 	     * 1. Mobile browsers dispatch mouse events 300ms after touchend.
 	     * 2. Chrome for Android dispatch mousedown for long-touch about 650ms
 	     * Result: Blocking Mouse Events for 700ms.
@@ -17424,7 +17424,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                // if (a.z2 === b.z2) {
 	                //     // FIXME Slow has renderidx compare
 	                //     // http://stackoverflow.com/questions/20883421/sorting-in-javascript-should-every-compare-function-have-a-return-0-statement
-	                //     // https://github.com/v8/v8/blob/47cce544a31ed5577ffe2963f67acb4144ee0232/src/js/array.js#L1012
+	                //     // https://github.com/v8/v8/blob/47cce544a31ed5577ffe2963f67acb4144ee0232/static/js/array.js#L1012
 	                //     return a.__renderidx - b.__renderidx;
 	                // }
 	                return a.z2 - b.z2;
@@ -35935,7 +35935,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    /**
 	     * Layout treemap with squarify algorithm.
 	     * @see https://graphics.ethz.ch/teaching/scivis_common/Literature/squarifiedTreeMaps.pdf
-	     * @see https://github.com/mbostock/d3/blob/master/src/layout/treemap.js
+	     * @see https://github.com/mbostock/d3/blob/master/static/layout/treemap.js
 	     *
 	     * @protected
 	     * @param {module:echarts/data/Tree~TreeNode} node
@@ -60432,7 +60432,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            var lang = model.get('lang');
 	            var html = ''
 	                + '<body style="margin:0;">'
-	                + '<img src="' + url + '" style="max-width:100%;" title="' + ((lang && lang[0]) || '') + '" />'
+	                + '<img static="' + url + '" style="max-width:100%;" title="' + ((lang && lang[0]) || '') + '" />'
 	                + '</body>';
 	            var tab = window.open();
 	            tab.document.write(html);
@@ -62194,7 +62194,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                imageRuntimeStyle.width = oldRuntimeWidth;
 	                imageRuntimeStyle.height = oldRuntimeHeight;
 
-	                // Caching image original width, height and src
+	                // Caching image original width, height and static
 	                this._imageSrc = src;
 	                this._imageWidth = ow;
 	                this._imageHeight = oh;
@@ -62309,7 +62309,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    imageELStyle.width = round(scaleX * ow * dw / sw) + 'px';
 	                    imageELStyle.height = round(scaleY * oh * dh / sh) + 'px';
 
-	                    // Caching image original width, height and src
+	                    // Caching image original width, height and static
 	                    self._imageWidth = ow;
 	                    self._imageHeight = oh;
 	                    self._imageSrc = image;
@@ -62356,7 +62356,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        if (alpha < 1) {
 	            filterStr += '.Alpha(opacity=' + round(alpha * 100) + ') ';
 	        }
-	        filterStr += imageTransformPrefix + '.AlphaImageLoader(src=' + image + ', SizingMethod=scale)';
+	        filterStr += imageTransformPrefix + '.AlphaImageLoader(static=' + image + ', SizingMethod=scale)';
 
 	        imageELStyle.filter = filterStr;
 
