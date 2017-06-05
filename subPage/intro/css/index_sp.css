@@ -1,0 +1,42 @@
+﻿@charset "UTF-8";
+/* iPad横サイズ以下(iPadはpc表示) */
+
+
+@media screen and (max-width:767px){
+	body.sp{
+	/*font-size:9px;*/
+	}
+	
+	
+	#menu_btn_box{
+		width:6.25%;
+		height:3.125%;
+		top: 4.68%;
+		right:  6.68%;
+	}
+	
+	#pages_box .main_images .text img{
+		position:absolute;
+		height:100%;
+		right:10%;
+	}
+	
+	#pages_box .main_images .text{
+		-webkit-transform:translateX(50px);
+		transform:translateX(50px);
+	}
+	 body.sp #page_comment p{
+		 font-size:1.6em;
+		
+	}
+	
+	body.sp #page_comment.yoko{
+	width: 80%;
+	}
+	
+	 body.sp small{
+		font-size:1.5em;
+		color:#FFF;
+	}
+
+}

@@ -1,0 +1,244 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,user-scalable=0">
+<link rel="stylesheet" type="text/css" href="style/css/index.css" />
+<!--link rel="stylesheet" type="text/css" href="css/menu.css" /-->
+<link rel="stylesheet" type="text/css" href="style/css/indexmenu.css" />
+<link rel="stylesheet" type="text/css" href="style/css/index_sp.css" />
+<!--[if lt IE 9]>
+<script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style/css/index_ie.css">
+<![endif]-->
+<!--[if lte IE 9]>
+<link rel="stylesheet" type="text/css" href="style/css/menu_ie.css">
+<![endif]-->
+<script type="text/javascript" src="js/jQuery11.2.js"></script>
+<script type="text/javascript" src="js/jquery.easing.js"></script>
+<script type="text/javascript" src="js/utils.js"></script>
+<script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/clock.js"></script>
+<script type="text/javascript" src="js/pagechange.js"></script>
+<script type="text/javascript" src="js/indexmenu.js"></script>
+
+<title>Funny hours</title>
+<meta name="description" content="Funny hoursは、芝浦や葉山などに拠点を持つ、会員制クラブです。入会金・年会費は無料。会員の方に「自分に還れる時間」をお届けすることを目指し、ダイニングやバー、貸別荘、コンシェルジュサービスなどを展開しています。">
+<meta name="keywords" content="Funny hours">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Funny hours">
+<meta property="og:description" content="Funny hoursは、芝浦や葉山などに拠点を持つ、会員制クラブです。入会金・年会費は無料。会員の方に「自分に還れる時間」をお届けすることを目指し、ダイニングやバー、貸別荘、コンシェルジュサービスなどを展開しています。">
+<meta property="og:image" content="http://www.funnyfunny.jp/img/shared/sns.jpg">
+<meta property="og:title" content="Funny hours">
+<meta property="og:url" content="http://www.funnyfunny.jp/">
+
+</head>
+
+<body>
+<section id="wrapper">
+
+	<div id="canvas_area">
+   		 <div id="modal_back"><div class="ie_img"></div></div>
+    	<canvas id="clock"></canvas>
+        
+    </div>
+    
+	<div id="content">
+    	<div class="box show">
+        
+        <h1 class="logo"><img src="img/index/funnyhours_text.png" width="100%" alt=""/></h1>
+        
+        <div id="degital">
+        	<div class="h_1"><img class="degital" src="img/index/nums/num0.png" width="100%" alt=""/></div>
+        	<div class="h_2"><img class="degital" src="img/index/nums/num0.png" width="100%" alt=""/></div>
+            <div class="dot"><img src="img/index/nums/num10.png" width="100%" alt=""/></div>
+        	<div class="m_1"><img class="degital" src="img/index/nums/num0.png" width="100%" alt=""/></div>
+            <div class="m_2"><img class="degital" src="img/index/nums/num0.png" width="100%" alt=""/></div>
+            <div class="dot"><img src="img/index/nums/num10.png" width="100%" alt=""/></div>
+            <div class="s_1"><img class="degital" src="img/index/nums/num0.png" width="100%" alt=""/></div>
+          <div class="s_2"><img class="degital" src="img/index/nums/num0.png" width="100%" alt=""/></div>
+        </div><!--degital-->
+        
+        <div class="btns">
+          <img class="btn1" src="img/index/pointer1.png" width="8.90%" alt="Play"/>
+          <img class="btn2" src="img/index/pointer2.png" width="8.90%" alt="Learn"/>
+          <img class="btn3" src="img/index/pointer3.png" width="8.90%" alt="Celebrate"/>
+          <img class="btn4" src="img/index/pointer4.png" width="8.90%" alt="Contact"/>
+          <img class="btn5" src="img/index/pointer5.png" width="8.90%" alt="Topics"/>
+       </div>
+        
+        
+      </div>
+    </div>
+    
+    <div class="copyright"><small>&copy;&nbsp;Funny&nbsp;Inc.&nbsp;All&nbsp;rights&nbsp;reserved.</small></div>
+    
+    <!--div id="front_flame"></div-->
+    
+   
+    
+    <!--section id="pages_box">
+    
+    	<div class="main_images">
+            <div id="play" class="page1">
+            	<div class="main_img">
+            		<img class="red" src="img/index/menu/circle_red.png" width="100%" alt=""/>
+               		<img class="img" src="img/index/menu/main_play.png" width="100%" alt="image"/>
+               </div>
+               <div class="text"><img src="img/index/menu/play.png" height="100％" alt="Play 遊ぶ"/></div>
+          </div>
+            
+            <div id="learn" class="page2">
+            	<div class="main_img">
+            		<img class="red" src="img/index/menu/circle_red.png" width="100%" alt=""/>
+               		<img class="img" src="img/index/menu/main_learn.png" width="100%" alt="image"/>
+               </div>
+               <div class="text"><img src="img/index/menu/learn.png" height="100％" alt="Learn 学ぶ"/></div>
+            </div>
+            <div id="celebrate" class="page3">
+            	<div class="main_img">
+            		<img class="red" src="img/index/menu/circle_red.png" width="100%" alt=""/>
+               		<img class="img" src="img/index/menu/main_celebrate.png" width="100%" alt="image"/>
+               </div>
+               <div class="text"><img src="img/index/menu/celebrate.png" height="100％" alt="Celebrate 悦ぶ"/></div>
+            
+            </div>
+    	</div>
+        
+        <div id="page_pointers" class="clear_fix">
+        	<div class="pointer1">
+                <img class="back" src="img/index/menu/circle_white1.png" width="100%" alt=""/>
+                <img class="front" src="img/index/menu/circle_white2.png" width="100%" alt=""/>
+            </div>
+            <div class="pointer2">
+                <img class="back" src="img/index/menu/circle_white1.png" width="100%" alt=""/>
+                <img class="front" src="img/index/menu/circle_white2.png" width="100%" alt=""/>
+            </div>
+            <div class="pointer3">
+                <img class="back" src="img/index/menu/circle_white1.png" width="100%" alt=""/>
+                <img class="front" src="img/index/menu/circle_white2.png" width="100%" alt=""/>
+            </div>
+        </div>
+        
+        <div id="page_comment">
+       		 <p class="comment1">遊べる、Funny hours。どの拠点でも、あなたが出逢えるのは、「自分に還れる時間」。</p>
+             <p class="comment2">遊ぶとこ、時々、学ぶとこ。明日から使える実用的講座、各種取り揃えました。</p>
+             <p class="comment3">あなたの悦ぶ顔が見たいから。Funny hoursにできることを、いろいろ増やしていきたいと思います。</p>
+        </div>
+        
+        <div class="link_btn"><img src="img/index/menu/go_next_arrow.png" width="100%"  alt=""/></div>
+    </section-->
+    
+    
+<section id="index_page">
+
+		<!--div id="modal_back"><div class="ie_img"></div></div-->
+
+        <div id="menu_block" class="yoko">
+
+            <div class="img_block clear_fix">
+
+            <div class="block play clear_fix">
+                <div class="text"><a href="./funny/"><img src="img/index_menu/play_text.png" alt="funny"></a></div>
+
+                <div class="btn">
+                <img src="img/index_menu/btn_over.png" class="over_red" alt="play image">
+                <img src="img/index_menu/btn_over_black.png" class="over" alt="play image">
+                <img src="img/index_menu/btn_white.png" class="white" alt="play image">
+                <a href="./funny/"><img src="img/index_menu/play.png" class="normal" alt="play image"></a>
+                </div>
+
+                <div class="textj"><a href="./funny/"><img src="img/index_menu/play_text_j.png" alt="遊ぶ"/></a></div>
+            </div>
+
+             <div class="block learn clear_fix">
+                 <div class="text"><a href="./learn/"><img src="img/index_menu/learn_text.png" alt="learn"></a></div>
+
+                 <div class="btn">
+                 <img src="img/index_menu/btn_over.png" class="over_red" alt="">
+                 <img src="img/index_menu/btn_over_black.png" class="over" alt="">
+                 <img src="img/index_menu/btn_white.png" class="white" alt="play image">
+                 <a href="./learn/"><img src="img/index_menu/learn.png" class="normal" alt=""></a>
+                 </div>
+
+                 <div class="textj"><a href="./learn/"><img src="img/index_menu/learn_text_j.png" alt="学ぶ"></a></div>
+             </div>
+
+            <div class="block celebrate clear_fix">
+                 <div class="text"><a href="./celebrate/"><img src="img/index_menu/celebrate_text.png" alt="celebrate"></a></div>
+                 <div class="btn">
+
+                 <img src="img/index_menu/btn_over.png" class="over_red" alt="celebrate image">
+                 <img src="img/index_menu/btn_over_black.png" class="over" alt="celebrate image">
+                 <img src="img/index_menu/btn_white.png" class="white" alt="play image">
+                 <a href="./celebrate/"><img src="img/index_menu/celebrate.png" class="normal" alt="celebrate image"></a>
+                 </div>
+
+                 <div class="textj"><a href="./celebrate/"><img src="img/index_menu/celebrate_text_j.png" alt="悦ぶ"></a></div>
+            </div>
+
+             <div class="block contact clear_fix">
+                 <div class="text"><a href="/contact/"><img src="img/index_menu/contact_text.png" alt="contact"></a></div>
+
+                 <div class="btn small">
+                 <img src="img/index_menu/sbtn_over.png" class="over_red" alt="contact image">
+                 <img src="img/index_menu/sbtn_over_black.png" class="over" alt="contact image">
+                 <img src="img/index_menu/sbtn_white.png" class="white" alt="play image">
+                 <a href="/contact/"><img src="img/index_menu/contact.png" class="normal" alt="contact image"></a>
+                 </div>
+
+                 <div class="textj"><a href="/contact/"><img src="img/index_menu/contact_text_j.png" alt="お問い合わせ"></a></div>
+             </div>
+
+             <div class="block topics clear_fix">
+                 <div class="text"><a href="/topics/"><img src="img/index_menu/topics_text.png" alt="topics"></a></div>
+                 <div class="btn small">
+                 <img src="img/index_menu/sbtn_over.png" class="over_red" alt="img_block image">
+                 <img src="img/index_menu/sbtn_over_black.png" class="over" alt="img_block image">
+                 <img src="img/index_menu/sbtn_white.png" class="white" alt="play image">
+                 <a href="/topics/"><img src="img/index_menu/topics.png" class="normal" alt="img_block image"></a>
+                 </div>
+                 <div class="textj"><a href="/topics/"><img src="img/index_menu/topics_text_j.png" alt="トピックス"></a></div>
+             </div>
+
+             </div><!--img_block-->
+
+             <div class="footer_menu clear_fix">
+                <div class="concept"><a href="./concept/">
+                    <img src="img/index_menu/footer_concept.png" class="conceptimg normal" alt="コンセプト">
+                </a></div>
+                <div class="access"><a href="./access/">
+                    <img src="img/index_menu/footer_access.png" class="accessimg normal" alt="アクセス">
+                </a></div>
+                <div class="summary"><a href="./company_profile/">
+                    <img src="img/index_menu/footer_summary.png" class="summaryimg normal" alt="会社概要">
+                </a></div>
+                <div class="privacy"><a href="./privacy_policy/">
+                    <img src="img/index_menu/footer_privacy.png" class="privacyimg normal" alt="プライバシーポリシー">
+                </a></div>
+             </div>
+        </div>
+</section>
+
+    
+    
+    <div id="menu_btn_box">
+
+        <div class="lines open show">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            <div class="line4"></div>
+        </div>
+        <div id="ie_btn">
+            <img class="close" src="img/index/menu/menu_close.png" width="31" height="31" alt=""/>
+            <img class="open show" src="img/index/menu/menu_open.png" width="31" height="31" alt=""/>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>

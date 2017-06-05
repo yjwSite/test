@@ -1,0 +1,113 @@
+﻿@charset "UTF-8";
+img,a{
+  border-style:none;
+  border: 0px;
+}
+#content .box{
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader (src='img/index/nums/clockback.png',sizingMethod='scale');
+	visibility:hidden;
+}
+
+#content .box.show{
+	visibility:visible;
+}
+
+#canvas_area{
+	background:none;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader (src='img/index/main_back.jpg',sizingMethod='scale');
+	visibility:hidden;
+}
+
+#canvas_area.show{
+	visibility:visible;
+}
+
+
+#content{
+	visibility:hidden;
+}
+
+#content.show{
+	visibility:visible;
+}
+
+#menu_btn_box .lines{display: none;}
+
+#menu_btn_box #ie_btn{display: block;}
+
+#menu_btn_box #ie_btn img{
+	display:block;
+	position:absolute;
+	top:0;
+	visibility:hidden;
+}
+
+#menu_btn_box #ie_btn img.show{
+	visibility:visible;
+}
+
+
+#index_page{
+
+	display:none;
+
+}
+
+#index_page.show{
+	display:block;
+}
+
+#pages_box{
+	display:none;
+}
+#pages_box.show{
+	display:block;
+}
+
+#pages_box .main_img .img,
+#pages_box .main_img .red{
+	visibility:hidden;
+}
+
+
+#pages_box .main_img.show .img,
+#pages_box .main_img.show .red{
+	visibility:visible;
+}
+
+
+#pages_box .main_images .text{
+	visibility:hidden;
+}
+
+
+
+#pages_box .main_images .text.show{
+	visibility:visible;
+}
+
+#page_pointers>div img.front{
+	visibility:hidden;
+}
+
+#page_pointers>div:hover img{
+	visibility:visible;
+}
+
+#page_pointers>div.active img{
+	visibility:visible !important;
+}
+
+#menu_block .img_block .block .btn .over_red,
+#page_comment p{
+	visibility:hidden;
+}
+
+#page_comment p.show{
+	visibility:visible;
+}
+
+#menu_block .img_block .block .btn,
+#menu_block .img_block .block img{
+	cursor:pointer;
+}
