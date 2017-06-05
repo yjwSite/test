@@ -1,9 +1,15 @@
-﻿ html {
+﻿
+
+
+ html {
                 height: 100%;
             }
             body {
                 font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
-                background: #000;
+                /*background: #000;*/
+
+                background: url(../images/bg.gif);
+                cursor: url(../images/Arrow.cur),auto;
                 color: #CFEBE4;
                 font-size: 18px;
                 line-height: 2;
@@ -66,13 +72,86 @@ img#logo {
 	margin-bottom: 20px;
 	transition: all 1.0s;  
 }
-#logo:hover {
-    box-shadow: 0 0 10px #fff;
-    -webkit-box-shadow: 0 0 19px #fff;
-    transform:rotate(360deg);
-    -ms-transform:rotate(360deg); 	/* IE 9 */
-    -moz-transform:rotate(360deg); 	/* Firefox */
-    -webkit-transform:rotate(360deg); /* Safari �� Chrome */
-    -o-transform:rotate(360deg); 	/* Opera */
-    filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
-}
+
+
+ #logo:hover {
+     box-shadow: 0 0 10px #fff;
+     -webkit-box-shadow: 0 0 19px #fff;
+     transform:rotate(360deg);
+     -ms-transform:rotate(360deg); 	/* IE 9 */
+     -moz-transform:rotate(360deg); 	/* Firefox */
+     -webkit-transform:rotate(360deg); /* Safari �� Chrome */
+     -o-transform:rotate(360deg); 	/* Opera */
+     filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+ }
+ .anniu {
+     color: #3F3F3F99;
+     font-weight: 500;
+     font-size: 20px;
+     background-color: rgba(255, 255, 255, 0.12);
+     padding: 5px 9px;
+     border-radius: 10px;
+     margin-top: 10px;
+ }
+ .anniu:hover {
+     color: #FFFFFFE6;
+     background-color: rgba(255, 255, 255, 0.06);
+     transition: all 350ms;
+ }
+ a {
+     margin: 0 auto;
+     line-height: 40px;
+     text-align: center;
+     text-decoration: none;
+ }
+
+ a:link,
+ a:visited {
+     color:#D0CCCC;
+     text-decoration:none;
+ }
+ a:hover,
+ a:active {
+     color:#fff;
+     text-decoration:none;
+ }
+
+ .copyright {
+     bottom: 0;
+     cursor: default;
+     height: 6em;
+     left: 0;
+     line-height: 8em;
+     position: absolute;
+     text-align: center;
+     width: 100%;
+     transform: scale(0,0);
+     transition-property:width height;
+     transition-duration:2s;
+     transition-delay:0.8s;
+     z-index:2;
+ }
+
+ #shiping{
+     padding:0px;
+     margin:0px;
+ }
+ #shiping #mp4_sp #bfq{
+     margin:0px;
+     padding:0px;
+
+ }
+
+ #bfq{
+     position:fixed;
+     right:0;
+     bottom:0;
+     min-height:100%;
+     min-width:100%;
+     width:auto;
+     height:auto;
+     z-index:1;
+     background-size:cover;
+     opacity:0.0;
+     transition: all 2.0s;
+ }
