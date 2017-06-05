@@ -1,0 +1,115 @@
+body{
+    background-color: #bbb;
+}
+.leaveWordsBox{
+    width:800px;
+    margin: 0 auto;
+
+    font-size: 1.5rem;
+}
+.leaveWords{
+  width: 100%;
+    background-color: #eee;
+}
+.leaveWords dt{
+    background-color: #999;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+.leaveWords dd:nth-last-child(1) ul{
+    border-bottom: none;
+}
+
+
+.leaveWords ul{
+    margin: 0 6%;
+    border-bottom: dotted 1px #aaa;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+
+}
+.leaveWords ul li{
+    padding: 0 50px;
+}
+
+.leaveWords ul li .nameAndImg{
+    overflow: hidden;
+    height:40px;
+    line-height: 40px;
+}
+.leaveWords ul .initText{
+    padding: 0;
+}
+
+.leaveWords ul li span{
+    padding-right: 10px;
+    float: left;
+}
+.leaveWords ul li img{
+    float: left;
+    padding: 5px 0;
+    padding-right: 10px;
+}
+.leaveWords ul li .accName{
+    color: #00a9e0;
+    cursor: pointer;
+
+}
+
+.leaveWords ul li p{
+    padding:0 40px
+}
+.leaveWords ul li .LeaWordTime{
+    color: #aaaaaa;
+}
+
+.leaveForm{
+    width:700px;
+    background-color: #b6e5ff;
+    margin-bottom: 100px;
+    padding: 0 50px;
+    padding-bottom: 20px;
+    overflow: hidden;
+
+   /* position: fixed;
+    left:50%;
+    top: 300px;
+    margin-left: -400px;*/
+
+}
+.leaveForm .leaveWordsTitle{
+    /*background-color: #999;*/
+    height: 50px;
+    line-height: 50px;
+    margin: 20px 0;
+    color: #4a5764;
+}
+.leaveForm .leaveWordsTitle h4{
+    /*padding-left: 50px;*/
+}
+.leaveForm label{
+    float: left;
+    width:10%;
+}
+.leaveForm input{
+    width:80%;
+    margin-bottom: 20px;
+    height: 30px;
+}
+.leaveForm textarea{
+    width:80%;
+    max-width: 80%;
+    min-height: 60px;
+}
+.leaveForm .accLeWould{
+    background-color: #0071b1;
+    color: #ffffff;
+    text-align: center;
+    height:30px;
+    line-height:30px;
+    width:100%;
+    font-size: 2rem;
+    border: none;
+    margin-top: 40px;
+    cursor: pointer;
+}
