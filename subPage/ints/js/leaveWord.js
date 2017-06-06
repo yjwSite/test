@@ -44,7 +44,7 @@ $(function() {
                 }
 
                 leaveWordHtml += '<dd><ul>' +
-                    '<li class="initText"><div class="nameAndImg"><img src="images/test.jpg"><span class="accName">' + yijiOj.lwName + '</span><span>回复</span><!--<span class="accName">鸟树下睡觉的猪</span>--></div> ' +
+                    '<li class="initText"><div class="nameAndImg"><img src="images/test.jpg"><span class="accName">' + yijiOj.lwName + '</span><!--<span>回复</span><span class="accName">鸟树下睡觉的猪</span>--></div> ' +
                     '<p>' + yijiOj.lwText + ' </p>' +
                     ' <p class="LeaWordTime"><span>' + yijiOj.createdAt + '</span>  <span class="lWreply" data-pid="' + yiji[i].yijisId + '" data-namep="' + yijiOj.lwName + '">回复</span></p>' +
                     '</li>' + erjiHtml + '</ul></dd>'
@@ -73,6 +73,7 @@ $(function() {
             initFun();
             console.log(datas);
             $(".lwconts").toggle(200);
+            //location.reload();
         })
     });
 
@@ -80,7 +81,7 @@ $(function() {
         var urlEnd = 'lwName=' + $("#leWoNameHf").val() + '&lwEmail=' + $("#leWoEmilHf").val() + '&lwText=' + $("#leWordsHf").val() + '&lwTier=' + $("#myModalLabel").attr("data-pid")+'&lwOjName='+$("#myModalLabel").attr("data-namep");
        console.log(urlEnd);
         ajGet(paths["lwInserts"], urlEnd, function (datas) {
-
+            //location.reload();
             initFun();
             $("#myModal").modal('hide');
             console.log(datas);
