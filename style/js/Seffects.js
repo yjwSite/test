@@ -5,7 +5,7 @@ if(navigator.platform.indexOf('Win32')!=-1){
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
             if(navigator.platform.indexOf('Win32')!=-1){
-                S.UI.simulate("welcome to|#countdown 3");
+                S.UI.simulate("welcome to|Sun|#countdown 4");
                 //S.UI.simulate("welcome to|me|#countdown 4");
             }else{
                 S.UI.simulate("#countdown 1");
@@ -137,14 +137,19 @@ if(navigator.platform.indexOf('Win32')!=-1){
                             if (index === 0) {
                                 if (sequence.length === 0) {
 
-                                    S.Shape.switchShape(S.ShapeBuilder.letter(''));
-                                    document.getElementById("willerce").style.transform="scale(1,1)";
-                                    document.getElementById("jb").style.transform="scale(1,1)";
-                                    if(navigator.platform.indexOf('Win32')!=-1){
-                                        document.getElementById("bfq").play();
-                                        document.getElementById("bfq").style.opacity=0.6;
-                                        document.getElementById("bfq").style.display="block";
-                                    }
+                                    console.log(index);
+                                    setTimeout(function(){
+                                        S.Shape.switchShape(S.ShapeBuilder.letter(''));
+                                        document.getElementById("willerce").style.transform="scale(1,1)";
+                                        document.getElementById("jb").style.transform="scale(1,1)";
+                                        if(navigator.platform.indexOf('Win32')!=-1){
+                                            document.getElementById("bfq").play();
+                                            document.getElementById("bfq").style.opacity=0.6;
+                                            document.getElementById("bfq").style.display="block";
+                                        }
+                                    },2000)
+
+
 
 
                                     //S.Shape.switchShape(S.ShapeBuilder.letter(''));

@@ -9,7 +9,8 @@ var paths={
     "lwFind":G_admin+"lwFind",
     //"lwFind":G_admin+"lwfins",
     "lwInsert":G_admin+"lwInsert",
-    "lwInserts":G_admin+"lwinserts"
+    "lwInserts":G_admin+"lwinserts",
+    "comVerify":G_admin+"comVerify"
 };
 
 var ajPot=function(urls,datas,succes){

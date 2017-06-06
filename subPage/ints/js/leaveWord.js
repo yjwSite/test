@@ -29,7 +29,7 @@ $(function() {
             console.log(yiji);
 
 
-            var leaveWordHtml = '<dt>留言版</dt>';
+            var leaveWordHtml = '<dt><h3>留言版</h3><h6 id="communication">交流</h6></dt>';
 
             for (var i = 0; i < yiji.length; i++) {
 
@@ -52,14 +52,45 @@ $(function() {
 
             $("#leaveWords").html(leaveWordHtml);
 
-            $(".lWreply").on("click", function () {
+            //点击回复
+            $(".lWreply").unbind().on("click", function () {
                 $("#myModal").modal('show');
                 $("#myModalLabel").attr("data-pid", $(this).attr("data-pid")).attr("data-namep",$(this).attr("data-namep")).html("回复:  " + $(this).attr("data-namep"));
 
-            })
-            $(".leaveWordsTitle").on("click", function () {
+            });
+            //点击留言
+            $(".leaveWordsTitle").unbind().on("click", function () {
                 //$(".lwconts").show(200);
                 $(".lwconts").toggle(200);
+            });
+            //交流
+            $("#communication").unbind().on("dblclick", function () {
+                var value = prompt('输入交流验证码：', '');
+
+
+
+
+
+
+                if(value == null){
+                    alert('你取消了输入！');
+                }else if(value == ''){
+                    alert('姓名输入为空，请重新输入！');
+                    //show_prompt();
+                }else{
+                    //alert('你好，'+value);
+                    ajGet(paths["comVerify"],"captcha="+value, function (datas) {
+
+                        console.log(datas);
+                        if(datas.code=="1"){
+                            window.location.href="../resume/index.html";
+                        }else if(datas.code=="0"){
+                            alert('验证不通过');
+                        }
+                    })
+                }
+
+                //window.location.href="../resume/index.html";
             })
 
         });
@@ -67,6 +98,7 @@ $(function() {
     }
 
 
+    //留言
     $("#accLeWould").on("click", function () {
         var urlEnd = 'lwName=' + $("#leWoName").val() + '&lwEmail=' + $("#leWoEmil").val() + '&lwText=' + $("#leWords").val() + '&lwTier=0&lwOjName=""';
         ajGet(paths["lwInserts"], urlEnd, function (datas) {
@@ -76,7 +108,7 @@ $(function() {
             //location.reload();
         })
     });
-
+    //回复
     $("#accLeWouldHf").on("click", function () {
         var urlEnd = 'lwName=' + $("#leWoNameHf").val() + '&lwEmail=' + $("#leWoEmilHf").val() + '&lwText=' + $("#leWordsHf").val() + '&lwTier=' + $("#myModalLabel").attr("data-pid")+'&lwOjName='+$("#myModalLabel").attr("data-namep");
        console.log(urlEnd);

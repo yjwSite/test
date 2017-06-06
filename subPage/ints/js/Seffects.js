@@ -123,10 +123,7 @@ if(navigator.platform.indexOf('Win32')!=-1){
                 action = getAction(current);
                 value = getValue(current);
 
-                console.log(action);
-                console.log(index);
 
-                console.log("--------------");
 
                 switch (action) {
                     case 'countdown':
