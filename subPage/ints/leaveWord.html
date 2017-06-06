@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title>留言版</title>
     <link rel="stylesheet" type="text/css" href="css/common.css">
-    <link rel="stylesheet" type="text/css" href="css/leaveWord.css">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/leaveWord.css">-->
+    <link rel="stylesheet/less" type="text/css" href="css/leaveWord.less">
 </head>
 <body>
 <!--<h6>留言</h6>-->
@@ -25,27 +27,27 @@
                         鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪
                         鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪
                     </p>
-                    <p class="LeaWordTime">2017年6月5日</p>
+                    <p class="LeaWordTime"><span>2017年6月5日</span>  <span class="lWreply">回复</span></p>
                 </li>
                 <li>
                     <div class="nameAndImg"><img src="images/test.jpg"><span class="accName">鸟树下睡觉的猪</span><span>回复</span><span class="accName">鸟树下睡觉的猪</span></div>
                     <p>鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪</p>
-                    <p class="LeaWordTime">2017年6月5日</p>
+                    <p class="LeaWordTime"><span>2017年6月5日</span>  <span class="lWreply">回复</span></p>
                 </li>
                 <li>
                 <div class="nameAndImg"><img src="images/test.jpg"><span class="accName">鸟树下睡觉的猪</span><span>回复</span><span class="accName">鸟树下睡觉的猪</span></div>
                 <p>鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪</p>
-                <p class="LeaWordTime">2017年6月5日</p>
+                <p class="LeaWordTime"><span>2017年6月5日</span>  <span class="lWreply">回复</span> </p>
             </li>
                 <li>
                 <div class="nameAndImg"><img src="images/test.jpg"><span class="accName">鸟树下睡觉的猪</span><span>回复</span><span class="accName">鸟树下睡觉的猪</span></div>
                 <p>鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪</p>
-                <p class="LeaWordTime">2017年6月5日</p>
+                <p class="LeaWordTime"><span>2017年6月5日</span>  <span class="lWreply">回复</span></p>
             </li>
                 <li>
                 <div class="nameAndImg"><img src="images/test.jpg"><span class="accName">鸟树下睡觉的猪</span><span>回复</span><span class="accName">鸟树下睡觉的猪</span></div>
                 <p>鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪</p>
-                <p class="LeaWordTime">2017年6月5日</p>
+                <p class="LeaWordTime"><span>2017年6月5日</span>  <span class="lWreply">回复</span></p>
             </li>
 
             </ul>
@@ -56,30 +58,63 @@
     <form class="leaveForm">
         <ul>
             <li class="leaveWordsTitle"><h4>留言</h4></li>
-            <li><label for="leWoName">名称</label><input id="leWoName"></li>
-            <li><label for="leWoEmil">邮箱</label><input id="leWoEmil"></li>
-            <li><label for="leWords">留言</label><textarea id="leWords"></textarea></li>
-            <li><div id="accLeWould" class="accLeWould">提交留言</div></li>
+            <li class="lwconts"><label for="leWoName">名称</label><input id="leWoName"></li>
+            <li class="lwconts"><label for="leWoEmil">邮箱</label><input id="leWoEmil"></li>
+            <li class="lwconts"><label for="leWords">留言</label><textarea id="leWords"></textarea></li>
+            <li class="lwconts"><div id="accLeWould" class="accLeWould">提交留言</div></li>
             <!--<li><button id="accLeWould" class="accLeWould">提交留言</button></li>-->
         </ul>
     </form>
 
-    <form class="leaveForm leaveFormHf">
-        <ul>
-            <li class="leaveWordsTitle"><h4>留言</h4></li>
-            <li><label for="leWoNameHf">名称</label><input id="leWoNameHf"></li>
-            <li><label for="leWoEmilHf">邮箱</label><input id="leWoEmilHf"></li>
-            <li><label for="leWordsHf">留言</label><textarea id="leWordsHf"></textarea></li>
-            <li><div id="accLeWouldHf" class="accLeWould">提交回复</div></li>
-            <!--<li><button id="accLeWould" class="accLeWould">提交留言</button></li>-->
-        </ul>
-    </form>
+<!--    <div class="leaveFormHf">
+        <form class="leaveForm">
+            <ul>
+                <li class="leaveWordsTitle"><h4>回复</h4></li>
+                <li><label for="leWoNameHf">名称</label><input id="leWoNameHf"></li>
+                <li><label for="leWoEmilHf">邮箱</label><input id="leWoEmilHf"></li>
+                <li><label for="leWordsHf">留言</label><textarea id="leWordsHf"></textarea></li>
+                <li><div id="accLeWouldHf" class="accLeWould">提交回复</div></li>
+                &lt;!&ndash;<li><button id="accLeWould" class="accLeWould">提交留言</button></li>&ndash;&gt;
+            </ul>
+        </form>
+    </div>-->
+
+
+
+    <!-- Modal -->
+    <div class="modal .fade" style="top: 40%" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">回复</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="leaveForm leaveFormHf">
+                        <ul>
+                            <li><label for="leWoNameHf">名称</label><input id="leWoNameHf"></li>
+                            <li><label for="leWoEmilHf">邮箱</label><input id="leWoEmilHf"></li>
+                            <li><label for="leWordsHf">留言</label><textarea id="leWordsHf"></textarea></li>
+                            <!--<li><div id="accLeWouldHf" class="accLeWould">提交回复</div></li>-->
+                        </ul>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="button" class="btn btn-primary" id="accLeWouldHf">回复</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 </div>
 
 
 
 <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="libs/less/less.min.js"></script>
 <script type="text/javascript" src="js/commonUrl.js"></script>
 <script type="text/javascript" src="js/leaveWord.js"></script>
 </body>

@@ -14,7 +14,11 @@ body{
 .leaveWords dt{
     background-color: #999;
     color: #ffffff;
-    font-size: 1.2rem;
+    font-size:2rem;
+    line-height: 40px;
+    height: 40px;
+    padding-left: 20px;
+    border-left:6px solid #32a8ff;
 }
 .leaveWords dd:nth-last-child(1) ul{
     border-bottom: none;
@@ -71,12 +75,26 @@ body{
     padding-bottom: 20px;
     overflow: hidden;
 
-   /* position: fixed;
-    left:50%;
-    top: 300px;
-    margin-left: -400px;*/
+
+
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
 
 }
+.leaveFormHf .leaveForm{
+    position: absolute;
+    left:50%;
+    bottom:0;
+
+    margin:0 0 0 -400px;
+
+
+}
+
+
 .leaveForm .leaveWordsTitle{
     /*background-color: #999;*/
     height: 50px;
