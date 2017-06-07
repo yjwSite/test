@@ -52,14 +52,25 @@ $(function() {
 
             $("#leaveWords").html(leaveWordHtml);
 
+            //$("#leaveWords").scrollTop(1000);
             //点击回复
             $(".lWreply").unbind().on("click", function () {
+
+                var scrTop=$(this).offset().top-($(window).height()-$(".leaveForm").height());
+                if(scrTop-$(document).scrollTop()>-30){
+                    $("html body").scrollTop(scrTop+50);
+                }
+
+
+
+           /*     console.log($(window).height()-$(".leaveForm").height());
+                console.log($(this).offset().top-$(document).scrollTop());*/
+
                 $(".leaveForm").addClass("leaveFormFlx");
                 $(".leaveWords").eq(0).css("padding-bottom",$(".leaveForm").css("height"));
 
-                //$("#myModal").modal('show');
-                $("#leaveWordsTitle").attr("data-pid", $(this).attr("data-pid")).attr("data-namep",$(this).attr("data-namep")).html('<h4>回复:' + $(this).attr("data-namep")+'</h4><a id="cancel" href="javascript:void(0);">取消回复</a>');
 
+                $("#leaveWordsTitle").attr("data-pid", $(this).attr("data-pid")).attr("data-namep",$(this).attr("data-namep")).html('<h4>回复:' + $(this).attr("data-namep")+'</h4><a id="cancel" href="javascript:void(0);">取消回复</a>');
                 $("#cancel").unbind().on("click", function () {
                     cancelFun();
                 });
