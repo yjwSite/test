@@ -26,7 +26,7 @@ $(function() {
                     }
                 }
             }
-            console.log(yiji);
+            //console.log(yiji);
 
 
             var leaveWordHtml = '<dt><h3>留言版</h3><h6 id="communication">交流</h6></dt>';
@@ -57,7 +57,7 @@ $(function() {
             $(".lWreply").unbind().on("click", function () {
 
                 var scrTop=$(this).offset().top-($(window).height()-$(".leaveForm").height());
-                if(scrTop-$(document).scrollTop()>-30){
+                if(scrTop-$(document).scrollTop()> -30){
                     $("html body").scrollTop(scrTop+50);
                 }
 
@@ -117,30 +117,29 @@ $(function() {
 
         //$("#myModal").modal('show');
         $("#leaveWordsTitle").attr("data-pid","0").attr("data-namep","").html('<h4>留言</h4>');
-        $(".leaveForm input").val("");$(".leaveForm textarea").val("");
+        $(".leaveForm input").val("");$(".leaveForm textarea").val("");$(".leaveForm p").hide();
     }
 
     //留言
     $("#accLeWould").on("click", function () {
+        var lwName=$("#leWoName"),lwEmail=$("#leWoEmil"),lwWords=$("#leWords");
+        lwName.val()==""?lwName.parent("li").find("p").show():lwName.parent("li").find("p").hide();
+        lwEmail.val()==""?lwEmail.parent("li").find("p").show():lwEmail.parent("li").find("p").hide();
+        lwWords.val()==""?lwWords.parent("li").find("p").show():lwWords.parent("li").find("p").hide();
+
         //var urlEnd = 'lwName=' + $("#leWoName").val() + '&lwEmail=' + $("#leWoEmil").val() + '&lwText=' + $("#leWords").val() + '&lwTier=0&lwOjName=""';
-        var urlEnd = 'lwName=' + $("#leWoName").val() + '&lwEmail=' + $("#leWoEmil").val() + '&lwText=' + $("#leWords").val() + '&lwTier=' + $("#leaveWordsTitle").attr("data-pid")+'&lwOjName='+$("#leaveWordsTitle").attr("data-namep");
-        ajGet(paths["lwInserts"], urlEnd, function (datas) {
-            initFun();
-            console.log(datas);
-            cancelFun();
-            //location.reload();
-        })
-    });
-    //回复
-    $("#accLeWouldHf").on("click", function () {
-        var urlEnd = 'lwName=' + $("#leWoNameHf").val() + '&lwEmail=' + $("#leWoEmilHf").val() + '&lwText=' + $("#leWordsHf").val() + '&lwTier=' + $("#myModalLabel").attr("data-pid")+'&lwOjName='+$("#myModalLabel").attr("data-namep");
-       console.log(urlEnd);
-        ajGet(paths["lwInserts"], urlEnd, function (datas) {
-            //location.reload();
-            initFun();
-            $("#myModal").modal('hide');
-            console.log(datas);
-        })
+        var urlEnd = 'lwName=' + lwName.val() + '&lwEmail=' + lwEmail.val() + '&lwText=' + lwWords.val() + '&lwTier=' + $("#leaveWordsTitle").attr("data-pid")+'&lwOjName='+$("#leaveWordsTitle").attr("data-namep");
+
+        console.log(lwName.val()!="",lwEmail.val()!="",lwWords.val()!="");
+        if(lwName.val()!=""&&lwEmail.val()!=""&&lwWords.val()!=""){
+            ajGet(paths["lwInserts"], urlEnd, function (datas) {
+                initFun();
+                console.log(datas);
+                cancelFun();
+                //location.reload();
+            })
+        }
+
     });
 
 })

@@ -69,9 +69,15 @@
             <form class="leaveForm col-xs-12">
                 <ul>
                     <li class="leaveWordsTitle" id="leaveWordsTitle" data-pid="0"><h4>留言</h4></li>
-                    <li class="lwconts"><label for="leWoName">名称</label><input id="leWoName"></li>
-                    <li class="lwconts"><label for="leWoEmil">邮箱</label><input id="leWoEmil"></li>
-                    <li class="lwconts"><label for="leWords">留言</label><textarea id="leWords"></textarea></li>
+                    <!--<li class="lwconts"><label for="leWoName">名称<i>*</i></label><input id="leWoName"></li>-->
+
+
+                    <li class="lwconts"><label for="leWoName">名称<i>*</i></label><input id="leWoName" placeholder="名称"><p>名称不可为空</p></li>
+                    <!--<a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">可消失的弹出框</a>-->
+
+
+                    <li class="lwconts"><label for="leWoEmil">邮箱<i>*</i></label><input id="leWoEmil" placeholder="邮箱"><p>邮箱不可为空</p></li>
+                    <li class="lwconts"><label for="leWords">留言<i>*</i></label><textarea id="leWords" placeholder="留言"></textarea><p>留言不可为空</p></li>
                     <li class="lwconts"><div id="accLeWould" class="accLeWould">提交留言</div></li>
                     <!--<li><button id="accLeWould" class="accLeWould">提交留言</button></li>-->
                 </ul>
