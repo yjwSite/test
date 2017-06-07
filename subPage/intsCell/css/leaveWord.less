@@ -1,4 +1,10 @@
-
+body{
+  background-color: #f9f9f9;
+  //background: url("../images/bodyBg06.jpg");
+  //background: url("../images/bodyBg05.jpg");
+  //background: url("../images/bodyBg04.jpg");
+  //background: url("../images/bodyBg001.jpg");
+}
 
 .pl-3{
   padding-left: 3rem;
@@ -18,7 +24,8 @@
 
 @media (min-width: 320px){
   .leaveWords{
-    background-color: rgba(238, 238, 238, 0.15);
+    //background-color: rgba(238, 238, 238, 0.15);
+    background-color: #fff;
     font-size: 1.2rem;
   }
   .leaveWords dt{
@@ -56,7 +63,10 @@
   }
 
   .leaveWords ul li{
-    padding: 0 1rem;
+    padding: 0 0 0 2rem;
+    p{
+      padding:0 1rem 0 3.4rem;
+    }
   }
 
 
@@ -77,7 +87,7 @@
     float: left;
     padding: 0.5rem 0;
     padding-right:0.5rem;
-    border-radius: 50%;
+    //border-radius: 50%;
   }
   .leaveWords ul li .accName{
     color: #295c9d;
@@ -111,12 +121,14 @@
 
 
   .leaveForm{
-    background-color: #eee;
+    //background-color: #eee;
     //margin-bottom: 10rem;
     padding: 0 2rem;
     padding-bottom: 2rem;
     overflow: hidden;
 
+    background: url("../images/bodyBg001.jpg");
+    background-size:100px;
     .lwconts{
       //display: none;
     }
@@ -125,7 +137,9 @@
   .leaveFormFlx{
     position:fixed;
     bottom: 0;
-    background-color: #ccc;
+    //background-color: #ccc;
+/*    background: url("../images/bodyBg02.jpg");
+    background-size: 50px;*/
 
   }
   .leaveFormHf{
@@ -186,9 +200,13 @@
 
 }
 @media (min-width:600px) {
-
+  body{
+    background: url("../images/bodyBg02.jpg");
+    background-size: 50px;
+  }
   .leaveWords{
-    background-color: #eee;
+    //background-color: #eee;
+    background-color: #fdfdfd;
     font-size: 1.5rem;
   }
 
@@ -222,7 +240,10 @@
   }
 
   .leaveWords ul li{
-    padding: 0 5rem;
+    padding: 0 0 0 5rem;
+    p{
+      padding:0 2rem 0 4rem;
+    }
   }
 
 
@@ -233,6 +254,7 @@
   }
   .leaveWords ul .initText{
     padding: 0;
+
   }
 
   .leaveWords ul li span{
@@ -251,7 +273,7 @@
   }
 
   .leaveWords ul li p{
-    padding:0 4rem;
+    padding:0 0 0 4rem;
     overflow: hidden;
     .lWreply{
       background-color: #999;
@@ -276,7 +298,7 @@
   .leaveForm{
     //width:800px;
     //background-color: #b6e5ff;
-    background-color: #eee;
+    //background-color: #eee;
     //margin-bottom: 100px;
     padding: 0 50px;
     padding-bottom: 20px;
