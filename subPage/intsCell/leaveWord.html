@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+
+    <!--段代码来让IE的文档模式永远都是最新的-->
+    <meta ;http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" ;content="IE=edge, chrome=1">
+    <meta name="wap-font-scale" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>留言版</title>
+
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet/less" type="text/css" href="css/leaveWord.less">
+
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="libs/html5.js"></script>
+    <script type="text/javascript" src="libs/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <div class="row show-grid">
+        <section class="col-md-8 col-xs-12 col-md-offset-2 pd0">
+            <dl class="leaveWords" id="leaveWords">
+                <dt><h3>留言版</h3><h6 id="communication">交流</h6></dt>
+                <dd >
+                    <ul>
+                        <li class="initText">
+                            <div class="nameAndImg"><img src="images/test.jpg"><span class="accName">鸟树下睡觉的猪</span></div>
+                            <p>
+                                鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪
+                                鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪
+                                鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪
+                                鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪
+                                鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪
+                            </p>
+                            <p class="LeaWordTime"><span>2017年6月5日</span>  <span class="lWreply">回复</span></p>
+                        </li>
+                        <li>
+                            <div class="nameAndImg"><img src="images/test.jpg"><span class="accName">鸟树下睡觉的猪</span><span>回复</span><span class="accName">鸟树下睡觉的猪</span></div>
+                            <p>鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪</p>
+                            <p class="LeaWordTime"><span>2017年6月5日</span>  <span class="lWreply">回复</span></p>
+                        </li>
+                        <li>
+                            <div class="nameAndImg"><img src="images/test.jpg"><span class="accName">鸟树下睡觉的猪</span><span>回复</span><span class="accName">鸟树下睡觉的猪</span></div>
+                            <p>鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪</p>
+                            <p class="LeaWordTime"><span>2017年6月5日</span>  <span class="lWreply">回复</span> </p>
+                        </li>
+                        <li>
+                            <div class="nameAndImg"><img src="images/test.jpg"><span class="accName">鸟树下睡觉的猪</span><span>回复</span><span class="accName">鸟树下睡觉的猪</span></div>
+                            <p>鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪</p>
+                            <p class="LeaWordTime"><span>2017年6月5日</span>  <span class="lWreply">回复</span></p>
+                        </li>
+                        <li>
+                            <div class="nameAndImg"><img src="images/test.jpg"><span class="accName">鸟树下睡觉的猪</span><span>回复</span><span class="accName">鸟树下睡觉的猪</span></div>
+                            <p>鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪</p>
+                            <p class="LeaWordTime"><span>2017年6月5日</span>  <span class="lWreply">回复</span></p>
+                        </li>
+
+                    </ul>
+                </dd>
+            </dl>
+            <form class="leaveForm col-xs-12">
+                <ul>
+                    <li class="leaveWordsTitle" id="leaveWordsTitle" data-pid="0"><h4>留言</h4></li>
+                    <li class="lwconts"><label for="leWoName">名称</label><input id="leWoName"></li>
+                    <li class="lwconts"><label for="leWoEmil">邮箱</label><input id="leWoEmil"></li>
+                    <li class="lwconts"><label for="leWords">留言</label><textarea id="leWords"></textarea></li>
+                    <li class="lwconts"><div id="accLeWould" class="accLeWould">提交留言</div></li>
+                    <!--<li><button id="accLeWould" class="accLeWould">提交留言</button></li>-->
+                </ul>
+            </form>
+        </section>
+        <!--<aside class="col-md-4 hidden-xs hidden-sm">ppppp</aside>-->
+
+
+    </div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="libs/less/less.min.js"></script>
+<script type="text/javascript" src="js/commonUrl.js"></script>
+<script type="text/javascript" src="js/leaveWord.js"></script>
+<script type="text/javascript">
+
+    setTimeout(function(){
+        console.log($(".leaveWords").eq(0).css("width"));
+        $(".leaveForm").css("width",$(".leaveWords").eq(0).css("width"));
+
+    },1000)
+
+</script>
+</body>

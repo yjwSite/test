@@ -54,15 +54,17 @@ $(function() {
 
             //点击回复
             $(".lWreply").unbind().on("click", function () {
-                $("#myModal").modal('show');
-                $("#myModalLabel").attr("data-pid", $(this).attr("data-pid")).attr("data-namep",$(this).attr("data-namep")).html("回复:  " + $(this).attr("data-namep"));
+                $(".leaveForm").addClass("leaveFormFlx");
+                $(".leaveWords").eq(0).css("padding-bottom",$(".leaveForm").css("height"));
 
+                //$("#myModal").modal('show');
+                $("#leaveWordsTitle").attr("data-pid", $(this).attr("data-pid")).attr("data-namep",$(this).attr("data-namep")).html('<h4>回复:' + $(this).attr("data-namep")+'</h4><a id="cancel" href="javascript:void(0);">取消回复</a>');
+
+                $("#cancel").unbind().on("click", function () {
+                    cancelFun();
+                });
             });
-            //点击留言
-            $(".leaveWordsTitle").unbind().on("click", function () {
-                //$(".lwconts").show(200);
-                $(".lwconts").toggle(200);
-            });
+
             //交流
             $("#communication").unbind().on("dblclick", function () {
                 var value = prompt('输入交流验证码：', '');
@@ -95,16 +97,26 @@ $(function() {
 
         });
 
-    }
 
+
+    }
+    function cancelFun(){
+        $(".leaveForm").removeClass("leaveFormFlx");
+        $(".leaveWords").eq(0).css("padding-bottom","10px");
+
+        //$("#myModal").modal('show');
+        $("#leaveWordsTitle").attr("data-pid","0").attr("data-namep","").html('<h4>留言</h4>');
+        $(".leaveForm input").val("");$(".leaveForm textarea").val("");
+    }
 
     //留言
     $("#accLeWould").on("click", function () {
-        var urlEnd = 'lwName=' + $("#leWoName").val() + '&lwEmail=' + $("#leWoEmil").val() + '&lwText=' + $("#leWords").val() + '&lwTier=0&lwOjName=""';
+        //var urlEnd = 'lwName=' + $("#leWoName").val() + '&lwEmail=' + $("#leWoEmil").val() + '&lwText=' + $("#leWords").val() + '&lwTier=0&lwOjName=""';
+        var urlEnd = 'lwName=' + $("#leWoName").val() + '&lwEmail=' + $("#leWoEmil").val() + '&lwText=' + $("#leWords").val() + '&lwTier=' + $("#leaveWordsTitle").attr("data-pid")+'&lwOjName='+$("#leaveWordsTitle").attr("data-namep");
         ajGet(paths["lwInserts"], urlEnd, function (datas) {
             initFun();
             console.log(datas);
-            $(".lwconts").toggle(200);
+            cancelFun();
             //location.reload();
         })
     });
