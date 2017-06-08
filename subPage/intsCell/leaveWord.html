@@ -67,7 +67,7 @@
                 </dd>-->
             </dl>
             <button id="addList" class="addList">更早</button>
-            <form class="leaveForm col-xs-12">
+            <form class="leaveForm col-xs-12" style="display: none">
                 <ul>
                     <li class="leaveWordsTitle" id="leaveWordsTitle" data-pid="0"><h4>留言</h4></li>
                     <!--<li class="lwconts"><label for="leWoName">名称<i>*</i></label><input id="leWoName"></li>-->
@@ -102,9 +102,10 @@
 <script type="text/javascript" src="js/leaveWord.js"></script>
 <script type="text/javascript">
     $(function(){
-        $(".leaveForm").css("display","block");
+
         setTimeout(function(){
-            $(".leaveForm").css("width",$(".leaveWords").eq(0).css("width"));
+            $(".leaveForm").css({"display":"block","width":$(".leaveWords").eq(0).css("width")});
+//            $(".leaveForm").css("width",$(".leaveWords").eq(0).css("width"));
         },1000)
     });
 

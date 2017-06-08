@@ -103,8 +103,6 @@ $(function() {
         if(lwName.val()!=""&&lwEmail.val()!=""&&lwWords.val()!=""){
             ajGet(paths["lwInserts"], urlEnd, function (datas) {
                 console.log(datas);
-                //initFun("1");
-
                 if($("#leaveWordsTitle").attr("data-pid")=="0"){
                     var appHt='<dd><ul>' +
                         '<li class="initText"><div class="nameAndImg"><img src="images/test.jpg"><span class="accName">' + lwName.val() + '</span></div> ' +
@@ -122,7 +120,6 @@ $(function() {
                 }
                 lWreplyfun();
                 cancelFun();
-                //location.reload();
             })
         }
 
