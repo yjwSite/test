@@ -7,6 +7,7 @@
 var G_admin="http://cloud.bmob.cn/406b64c2c8e3e933/";
 var paths={
     "lwFind":G_admin+"lwFind",
+    "lwFinds":G_admin+"lwFinds",
     //"lwFind":G_admin+"lwfins",
     "lwInsert":G_admin+"lwInsert",
     "lwInserts":G_admin+"lwinserts",

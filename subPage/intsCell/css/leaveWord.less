@@ -31,6 +31,19 @@ body{
     //background-color: rgba(238, 238, 238, 0.15);
     background-color: #fff;
     font-size: 1.2rem;
+    .companding{
+      width:6rem;
+      height: 2rem;
+      margin: 0 auto;
+      background: url("../images/zankai.png") no-repeat;
+      background-size:4rem 1rem;
+      background-position: 50% 20%;
+      cursor: pointer;
+    }
+    .companding:hover{
+
+      background-position: 50% 80%;
+    }
   }
   .leaveWords dt{
     background-color: #999;
@@ -64,6 +77,11 @@ body{
     border-bottom: dotted 1px #aaa;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
+  }
+  .leaveWords ul.compands{
+
+    margin-bottom:0;
+
   }
 
   .leaveWords ul li{
@@ -127,7 +145,20 @@ body{
   .leaveWords ul li .LeaWordTime{
     color: #aaaaaa;
   }
-
+  .addList{
+    background-color: #6fc2ff;
+    color: #ffffff;
+    text-align: center;
+    height:3rem;
+    line-height:3rem;
+    width:100%;
+    font-size: 2rem;
+    border: none;
+    margin-top: -25px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    display: none;
+  }
 
   .leaveForm{
     padding: 0 2rem;
@@ -136,6 +167,8 @@ body{
 
     background: url("../images/bodyBg001.jpg");
     background-size:100px;
+
+    display: none;
   }
 
   .leaveFormFlx{

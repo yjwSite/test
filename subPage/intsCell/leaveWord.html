@@ -29,8 +29,8 @@
         <section class="col-md-8 col-xs-12 col-md-offset-2 pd0">
             <dl class="leaveWords" id="leaveWords">
                 <dt><h3>留言版</h3><h6 id="communication">交流</h6></dt>
-                <dd >
-                    <ul>
+                <!--<dd >
+                    <ul class="compands">
                         <li class="initText">
                             <div class="nameAndImg"><img src="images/test.jpg"><span class="accName">鸟树下睡觉的猪</span></div>
                             <p>
@@ -62,10 +62,11 @@
                             <p>鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪鸟树下睡觉的猪</p>
                             <p class="LeaWordTime"><span>2017年6月5日</span>  <span class="lWreply">回复</span></p>
                         </li>
-
                     </ul>
-                </dd>
+                    <div class="companding"></div>
+                </dd>-->
             </dl>
+            <button id="addList" class="addList">更早</button>
             <form class="leaveForm col-xs-12">
                 <ul>
                     <li class="leaveWordsTitle" id="leaveWordsTitle" data-pid="0"><h4>留言</h4></li>
@@ -100,12 +101,13 @@
 <script type="text/javascript" src="js/commonUrl.js"></script>
 <script type="text/javascript" src="js/leaveWord.js"></script>
 <script type="text/javascript">
+    $(function(){
+        $(".leaveForm").css("display","block");
+        setTimeout(function(){
+            $(".leaveForm").css("width",$(".leaveWords").eq(0).css("width"));
+        },1000)
+    });
 
-    setTimeout(function(){
-        console.log($(".leaveWords").eq(0).css("width"));
-        $(".leaveForm").css("width",$(".leaveWords").eq(0).css("width"));
-
-    },1000)
 
 </script>
 </body>
